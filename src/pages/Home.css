@@ -53,3 +53,20 @@
   /* border-color: #2a3547; */
   box-shadow: 0 0 0 0.2rem #2a354720;
 }
+
+.btn__sort {
+  border: none;
+  background-color: transparent;
+  color: #2a3547;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-select {
+  display: inline;
+  width: 50%;
+  margin: 0.5rem;
+  text-align: left;
+  border: none;
+  background-color: none;
+}
