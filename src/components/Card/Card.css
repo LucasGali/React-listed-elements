@@ -1,0 +1,31 @@
+.card {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease-in-out;
+  display: inline;
+  margin: 0.5rem;
+  width: 18rem;
+}
+
+.card-img-top {
+  margin-top: 1rem;
+  width: 12rem;
+  height: 12rem;
+  object-fit: contain;
+}
+
+.card-body {
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  border-top: #f4f4f4 solid 1px;
+}
+
+.card-title {
+  color: #1a1a1a;
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+
+}
