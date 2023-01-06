@@ -63,14 +63,14 @@ const Home = () => {
           <div></div>
         </div>
       ) : (
-        <div className='container'>
+        <div className='container text-center'>
           <div className="row">
-            <div className="col-9">
+            <div className="col">
               <label className='form-label' htmlFor="search">Search</label>
               <input id='search' className='form-control' type='text' onChange={(e) => seachProducts(e)} ></input>
             </div>
             { filterProducts.length > 0 && 
-              <div className='col-3'>
+              <div className='col'>
               <button type='button' className='btn__sort' onClick={() => invertSort()}>
                 <span>&#8645;</span>
               </button>
@@ -80,9 +80,9 @@ const Home = () => {
               </select>
             </div>}
           </div>
-          <div className='row'>
+          <div className='row row__cards'>
           {filterProducts.length > 0 ? (filterProducts.map((product) => (
-            <Card className='col' key={product.id} image={product.image} text={product.title} />
+            <Card className='col' key={product.id} id={product.id} image={product.image} text={product.title} />
           ))
           ) : (
             <div className='col-12 mt-2'>

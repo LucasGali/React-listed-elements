@@ -54,6 +54,12 @@
   box-shadow: 0 0 0 0.2rem #2a354720;
 }
 
+.form-control::before {
+  border: none;
+  /* border-color: #2a3547; */
+  box-shadow: 0 0 0 0.2rem #2a354720;
+}
+
 .btn__sort {
   border: none;
   background-color: transparent;
@@ -69,4 +75,8 @@
   text-align: left;
   border: none;
   background-color: none;
+}
+
+.row__card {
+  height: 90vh;
 }

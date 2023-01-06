@@ -6,6 +6,7 @@
   display: inline;
   margin: 0.5rem;
   width: 18rem;
+  max-height: 25rem;
 }
 
 .card-img-top {
@@ -27,5 +28,30 @@
   font-weight: 300;
   font-style: italic;
   margin-bottom: 0.5rem;
+  height: 4rem;
+}
 
+.large-font{
+  font-size: 1.5rem;
+}
+
+ion-icon.active{
+  animation:like 0.5s 1;
+  fill:red;
+  stroke:none;
+  visibility: visible;
+}
+
+ion-icon{
+  fill:transparent;
+  stroke:black;
+  stroke-width:30;
+  transition:all 0.5s;
+  visibility: visible;
+}
+
+@-webkit-keyframes like {
+  0%   { transform: scale(1); }
+  90%   { transform: scale(1.2); }
+  100% { transform: scale(1.1); }
 }
